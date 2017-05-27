@@ -7,18 +7,25 @@ class AboutForm extends Component {
 		super(props)
 
 		// this.state = {
-		// displayFormUser: "visible",
-		// displayFormPromo: "visible"
+		// displayFormUser : '{{display: none}}',
+		// displayFormPromo : '{{display: none}}'
 		// }
 	}
 
 	displayForm () {
+		const self=this;
 		if ('' !== this.props.selectedUserName) {
 			// this.setState({
 			// 	displayFormPromo: 'none',
 			// 	displayFormUser: 'block'
-			// })	
-			return <Form style= 'visibility: visible'>
+			// })
+			// self.setState({
+			// 	displayFormUser : '{{display: block}}',
+			// 	displayFormPromo: '{{display: none}}'
+			// })
+			return <Form 
+			//style={this.state.displayFormUser}
+			>
 						<Form.Field>
 							<label>Nom</label>
 							<input type="text" placeholder={this.props.selectedUserName}/>
@@ -35,7 +42,13 @@ class AboutForm extends Component {
 					</Form>}
 
 		else if ('' !== this.props.selectedPromoName){
-			return <Form style='visibility: visible'>
+			// self.setState({
+			// 	displayFormUser : '{{display: none}}',
+			// 	displayFormPromo: '{{display: block}}'
+			// })
+			return <Form
+			//style={this.state.displayFormPromo}
+			>
 					<Form.Field>
 						<label>Nom de la Promo</label>
 						<input class="ui input" type="text" placeholder={this.props.selectedPromoName} />
@@ -61,8 +74,7 @@ class AboutForm extends Component {
 			<Container>
 				<div>
 					{this.displayForm()}
-				</div>
-				
+				</div>				
 			</Container>
 		)
 	}

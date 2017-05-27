@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Container, Form, Dropdown} from 'semantic-ui-react';
+import {Container, Form, Dropdown, Divider} from 'semantic-ui-react';
 // npm install semantic-ui-dropdown car version dropdown utilisée n'est par react
 import AboutForm from './Form/AboutForm.js';
 import axios from 'axios';
@@ -118,7 +118,7 @@ class About extends Component {
 						</Form.Field>
 					</Form>				
 				</div>
-			
+				<Divider />
 				<AboutForm 
 					users={this.state.user} 
 					promos={this.state.promo} 
