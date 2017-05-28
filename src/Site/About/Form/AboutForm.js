@@ -13,7 +13,7 @@ class AboutForm extends Component {
 	}
 
 	displayForm () {
-		const self=this;
+	//	const self=this;
 		if ('' !== this.props.selectedUserName) {
 			// this.setState({
 			// 	displayFormPromo: 'none',
@@ -32,11 +32,11 @@ class AboutForm extends Component {
 						</Form.Field>
 						<Form.Field>
 							<label>Email</label>
-							<input class="ui input" type="text" placeholder={this.props.selectedUserEmail} />
+							<input className="ui input" type="text" placeholder={this.props.selectedUserEmail} />
 						</Form.Field>
 						<Form.Field>
 							<label>Role</label>
-							<input class="ui input" type="text" placeholder={this.props.selectedUserRole}/>
+							<input className="ui input" type="text" placeholder={this.props.selectedUserRole}/>
 						</Form.Field>
 						<Button content='Valider les modifications' />
 					</Form>}
@@ -51,15 +51,15 @@ class AboutForm extends Component {
 			>
 					<Form.Field>
 						<label>Nom de la Promo</label>
-						<input class="ui input" type="text" placeholder={this.props.selectedPromoName} />
+						<input className="ui input" type="text" placeholder={this.props.selectedPromoName} />
 					</Form.Field>
 					<Form.Field>
 						<label>Date de début</label>
-						<input class="ui input" type="text" placeholder={this.props.selectedPromoStartDate} />
+						<input className="ui input" type="text" placeholder={this.props.selectedPromoStartDate} />
 					</Form.Field>
 					<Form.Field>
 						<label>Date de fin</label>
-						<input class="ui input" type="text" placeholder={this.props.selectedPromoEndDate} />
+						<input className="ui input" type="text" placeholder={this.props.selectedPromoEndDate} />
 					</Form.Field>
 					<Button content='Valider les modifications' />
 				</Form>

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Container, Form, Dropdown, Divider} from 'semantic-ui-react';
+import {Container, Form, Divider, Select} from 'semantic-ui-react';
 // npm install semantic-ui-dropdown car version dropdown utilisée n'est par react
 import AboutForm from './Form/AboutForm.js';
 import axios from 'axios';

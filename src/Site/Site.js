@@ -24,14 +24,14 @@ const history = createBrowserHistory();
 
 class Site extends Component {
 	
-	constructor (props){
-		super(props)
+	// constructor (props){
+	// 	super(props)
 
 		// this.state = {
 		// 	promo: [],
 		// 	caracteristiques: {id: '', name: '', startDate: '', endDate: ''}
 		// }
-	}
+	// }
 	
 	// componentWillMount() {
 		
